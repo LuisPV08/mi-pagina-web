@@ -1,0 +1,88 @@
+/* Estilos para las tarjetas de conceptos */
+.concepts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.concept-card {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.concept-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para los botones de acción */
+.action-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Estilos para la miniatura del video */
+.video-thumbnail {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 1rem;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.concept-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.concept-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.concept-card p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.concept-card a {
+    display: inline-block;
+    margin-top: 1rem;
+}
+.concepts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* ... resto de los estilos de componentes ... */
